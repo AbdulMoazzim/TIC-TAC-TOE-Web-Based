@@ -18,20 +18,41 @@ main {
     margin: auto;
     display: flex;
     justify-content: center;
-    padding-top: 40px;
 }
 
 .gamecontainer {
-    margin: 5vw 0 0 5vw;
+    margin: 4vw 0 0 10vw;
     display: grid;
     grid-template-columns: repeat(3, 10vw);
     grid-template-rows: repeat(3, 10vw);
 }
 
 .gameinfo {
-    margin-top: 5vw;
+    margin-top: 4vw;
+}
+.gameinfo h1 {
+    padding-top: 10px;
+    font-size: 48px;
+}
+.gameinfo p {
+    padding-top: 10px;
+    font-size: 32px;
 }
 
+.gameinfo button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+#winning {
+    padding: 30px 0;
+    margin: auto;
+    display: block;
+    width: 0;
+    transition: width 1s ease-in-out;
+}
 .gamebox {
     display: flex;
     justify-content: center;
@@ -51,10 +72,34 @@ main {
     main {
         flex-wrap: wrap;
     }
+    .gameinfo h1, .gameinfo p {
+        padding-top: 20px;
+        text-align: center;
+    }
+    .gameinfo button {
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .gamecontainer {
+        padding-top: 40px;
+        margin-left: 0;
+    }
 }
 @media screen and (max-width: 500px) {
     main {
         flex-wrap: wrap;
+    }
+    .gameinfo h1, .gameinfo p {
+        text-align: center;
+    }
+    .gameinfo button {
+        display: block;
+        margin: auto;
+    }
+
+    #winning {
+        width: 40vw;
     }
     .gamecontainer {
         grid-template-columns: repeat(3, 15vw);
@@ -64,3 +109,17 @@ main {
         font-size: 24px;
     }
 }
+
+.bt {
+    border-top: 0;
+}
+.br {
+    border-right: 0;
+}
+.bl {
+    border-left: 0;
+}
+.bb {
+    border-bottom: 0;
+}
+
