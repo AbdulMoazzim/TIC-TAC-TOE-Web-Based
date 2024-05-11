@@ -44,6 +44,7 @@ main {
     padding: 5px 10px;
     font-size: 32px;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 #winning {
@@ -54,6 +55,7 @@ main {
     transition: width 1s ease-in-out;
 }
 .gamebox {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
