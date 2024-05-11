@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    font-size: 32px;
+    font-weight: 500;
+    height: 60px;
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+    background-color: rgb(245, 159, 253);
+}
+main {
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.gamecontainer {
+    margin: 5vw 0 0 5vw;
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+}
+
+.gameinfo {
+    margin-top: 5vw;
+}
+
+.gamebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+.gamebox:hover {
+    background-color: rgb(245, 159, 253);
+}
+
+#value {
+    font-size: 10vw;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 500px) {
+    main {
+        flex-wrap: wrap;
+    }
+    .gamecontainer {
+        grid-template-columns: repeat(3, 15vw);
+        grid-template-rows: repeat(3, 15vw);
+    }
+    header {
+        font-size: 24px;
+    }
+}
